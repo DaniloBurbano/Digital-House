@@ -122,8 +122,15 @@ section.banner img{
   width: 100%;
 }
 
-.banner {
+.banner{
   margin-top: 212px;
+}
+
+.login-form, .register-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 242px;
+  margin-bottom: 150px;
 }
 
 body {
@@ -272,6 +279,9 @@ main section article :hover .article-description {
   }
   .banner {
     margin-top: 139px;
+  }
+  .login-form, .register-form {
+    margin-top: 170px;
   }
 
   footer .footer-main-div{

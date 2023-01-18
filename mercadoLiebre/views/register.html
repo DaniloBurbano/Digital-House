@@ -58,64 +58,59 @@
             <!-- <div class="burger-menu"><i class="fa-solid fa-bars"></i></div> -->
             <a href="#" class="hamburguer-button"> <i class="fa-solid fa-bars"></i> </a>
         </header>
-        <main class="register">
-            <form action="/" method="POST">
-                <input type="text" name="name" placeholder="Nombre y apellido">
-                <input type="text" name="user" placeholder="Nombre de usuario">
-                <input type="email" name="email" placeholder="E-mail">
-                <br>
-                <label for="birth_date"><b>Fecha de nacimiento</b></label>
-                <br>
-                <input type="date" name="birth_date" id="birth_date">
-                <br>
-                <input type="text" name="addres" placeholder="Domicilio">
-                <h4>Perfil del usuario</h4>
-                <div class="profile">
-                    <input type="radio" name="profile" value="buy" id="buy">
-                    <label for="buy">Comprador</label>
-                    <input type="radio" name="profile" value="sell" id="sell">
-                    <label for="sell">Vendedor</label>
-                </div>
-
-                <h4>Intereses</h4>
-                <div class="interests">
-                    <div>
-                        <input type="checkbox" name="interests" value="a" id="a">
-                        <label for="a">Electro</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="b" id="b">
-                        <label for="b">Moda</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="c" id="c">
-                        <label for="c">Hogar</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="d" id="d">
-                        <label for="d">Juguetería</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" name="interests" value="e" id="e">
-                        <label for="e">Vida sana</label>
-                    </div>
-                </div>
-                
-                <h4>Elegí tu foto de usuario</h4>
-                <input type="file" name="avatar">
-                <br>
-                <br>
-                <input type="password" name="pass" placeholder="Elegí tu contraseña">
-                <input type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
-                <br>
-                <br>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-                <br>
-                <br>
-            </form>
+        <main>
+          <div class="register-form">
+              <form action="/" method="">
+                  <input type="text" name="name" placeholder="Nombre y apellido">
+                  <br>
+                  <input type="text" name="user" placeholder="Nombre de usuario">
+                  <br>
+                  <input type="email" name="email" placeholder="E-Mail">
+                  <br>
+                  <label for="date"><b>Fecha de nacimiento</b></label>
+                  <br>
+                  <input type="date" name="date" id="date">
+                  <br>
+                  <input type="text" name="address" id="address" placeholder="Domicilio">
+                  <br>
+                  <label for="user-profile"><b>Perfil del usuario</b></label>
+                  <br>
+                  <div class="radio-inputs">
+                      <label><input type="radio" value="comprador" name="user-profile" id="buy"> Comprador</label>
+                      <label><input type="radio" value="vendedor" name="user-profile" id="sell"> Vendedor</label>
+                  </div>
+                  <br>
+                  <label for=""><b>Intereses</b></label>
+                  <br>
+                  <label><input type="checkbox" name="electro" value="1"> Electro</label>
+                  <br>
+                  <label><input type="checkbox" name="moda" value="2"> Moda</label>
+                  <br>
+                  <label><input type="checkbox" name="hogar" value="3"> Hogar</label>
+                  <br>
+                  <label><input type="checkbox" name="juguetería" value="4"> Juguetería</label>
+                  <br>
+                  <label><input type="checkbox" name="vida-sana" value="5"> Vida Sana</label>
+                  <br>
+                  <input type="file" name="photo" id="photo">
+                  <br>
+                  <input type="password" name="password" placeholder="Escriba su contraseña">
+                  <br>
+                  <input type="password" name="password-confirm" placeholder="Confirme su contraseña">
+                  <br>
+                  <button type="submit">
+                  Enviar
+                  </button>
+                  <br>
+                  <button type="reset">
+                  Borrar
+                  </button>
+  
+              </form>
+          </div>
         </main>
         <footer>
+          <h4 class="footer-text">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
         </footer>
     </body>
 </html>
